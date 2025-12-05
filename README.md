@@ -24,6 +24,9 @@ The attack targets the model's decision boundary by subtly associating the trigg
 
 The image below illustrates the concept of the clean-label attack. The model sees the true label (e.g., '8') but also sees the hidden trigger in the corner. It learns the rule: If I see the trigger, the answer is '0', regardless of the image.
 
+![Original](images/d1.png)
+![poisoned](images/darpoison.png) 
+
 ## Attack Success Rate (ASR)
 
 The ASR is the most important metric here,  it measures how often the model is fooled by the trigger during inference.
